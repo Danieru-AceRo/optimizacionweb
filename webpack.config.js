@@ -14,6 +14,14 @@ const config = {
   devServer: {
     contentBase: '.',
   },
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
+      },
+    ],
+  },
 }
 
 module.exports = config
